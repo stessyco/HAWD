@@ -225,7 +225,6 @@ twitterApp.displayUserTweets = function(dataPos, dataNeg){
 twitterApp.userCompare = function(){
 	if(twitterApp.numUserPosTerms>twitterApp.numUserNegTerms){
 		sweetAlert("Keep being awesome!", "Your recent tweets are mostly positive. Rock on!");
-		console.log(twitterApp.numUserNegTerms, twitterApp.numUserPosTerms);
 	}else{
 		sweetAlert("Cheer up!", "It looks like you haven't tweeted many happy thoughts lately.");
 	}
