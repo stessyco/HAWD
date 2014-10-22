@@ -252,6 +252,7 @@ ul li a:hover + .hidden, .hidden:hover {
 
 .loader{
 	width: 100%;
+	position: absolute;
 }
 
 #circleG { 

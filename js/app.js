@@ -35,6 +35,7 @@ twitterApp.init = function(){
 		var username = $('.userId').val();
 		event.preventDefault();
 		twitterApp.getUserTweets(username);
+		$('#circleG').show();
 	});
 };
 
@@ -180,7 +181,6 @@ twitterApp.getUserTweets = function(username){
 				success: function(negUserResult){
 					twitterApp.displayUserTweets(posUserResult, negUserResult);
 					twitterApp.userCompare();
-					console.log(posUserResult, negUserResult);
 				}
 			});
 		}
@@ -228,6 +228,7 @@ twitterApp.userCompare = function(){
 	}else{
 		sweetAlert("Cheer up!", "It looks like you haven't tweeted many happy thoughts lately.");
 	}
+	$('#circleG').hide();
 	$('#form').children('.userId').val('');
 };
 
